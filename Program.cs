@@ -29,18 +29,41 @@ InitializeGame();
 while (!shouldExit) 
 {
   
-shouldExit  = Engine.TerminalResized(length,breadth);
-
-    Engine.Move(ref x_player, ref y_player, player, length, breadth, ref shouldExit);
+ if (Engine.TerminalResized(length, breadth)) 
+    {
+        Console.Clear();
+        Console.Write("Console was resized. Program exiting.");
+        shouldExit = true;
+    } 
+    else 
+    {
+        if (Engine.PlayerIsFaster(ref player, states)) 
+        {
+            Engine.Move(ref x_player, ref y_player, shouldExit,ref player, length, breadth, false, 1);
+        } 
+        else if (Engine.PlayerIsSick(ref player, states)) 
+        {
+            Engine.FreezePlayer(ref player,states);
+        } else 
+        {
+            Engine.Move(ref x_player, ref y_player, shouldExit,ref player, length, breadth, false);        }
+        if (Engine.GotFood(ref x_player, ref y_player, ref foodX, ref foodY))
+        {
+            Engine.ChangePlayer(ref player,states, ref food, ref x_player, ref y_player);
+            Engine.ShowFood(foods, length, breadth,ref player, ref foodX, ref foodY);
+        }
+    }
 }
 
-
+if (shouldExit) {
+    Console.Clear();
+}
 
 // Clears the console, displays the food and player
 void InitializeGame() 
 {
     Console.Clear();
-    Engine.ShowFood(foods, length, breadth, player, ref foodX, ref foodY);
+    Engine.ShowFood(foods, length, breadth,ref player, ref foodX, ref foodY);
     Console.SetCursorPosition(0, 0);
     Console.Write(player);
 }
