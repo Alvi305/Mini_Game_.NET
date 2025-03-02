@@ -1,0 +1,15 @@
+C:\Learning\Mini_Game_.NET\obj\Debug\net6.0\Starter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Learning\Mini_Game_.NET\obj\Debug\net6.0\Starter.AssemblyInfoInputs.cache
+C:\Learning\Mini_Game_.NET\obj\Debug\net6.0\Starter.AssemblyInfo.cs
+C:\Learning\Mini_Game_.NET\obj\Debug\net6.0\Starter.csproj.CoreCompileInputs.cache
+C:\Learning\Mini_Game_.NET\obj\Debug\net6.0\Starter.sourcelink.json
+C:\Learning\Mini_Game_.NET\bin\Debug\net6.0\Starter.exe
+C:\Learning\Mini_Game_.NET\bin\Debug\net6.0\Starter.deps.json
+C:\Learning\Mini_Game_.NET\bin\Debug\net6.0\Starter.runtimeconfig.json
+C:\Learning\Mini_Game_.NET\bin\Debug\net6.0\Starter.dll
+C:\Learning\Mini_Game_.NET\bin\Debug\net6.0\Starter.pdb
+C:\Learning\Mini_Game_.NET\obj\Debug\net6.0\Starter.dll
+C:\Learning\Mini_Game_.NET\obj\Debug\net6.0\refint\Starter.dll
+C:\Learning\Mini_Game_.NET\obj\Debug\net6.0\Starter.pdb
+C:\Learning\Mini_Game_.NET\obj\Debug\net6.0\Starter.genruntimeconfig.cache
+C:\Learning\Mini_Game_.NET\obj\Debug\net6.0\ref\Starter.dll
